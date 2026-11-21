@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block and Inline Elements</title>
+</head>
+<body>
+    <style>
+        /* Page ki basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        h2 {
+            margin-top: 25px;
+            color: #222;
+        }
+
+        /* Block elements ki styling */
+        .block {
+            display: block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 6px;
+        }
+
+        /* Inline elements ki styling */
+        .inline {
+            display: inline;
+            background-color: #2ecc71;
+            color: white;
+            padding: 6px 12px;
+            margin-right: 6px;
+            border-radius: 6px;
+        }
+
+        /* Nesting dikhane ke liye container box */
+        .container {
+            background-color: #ffffff;
+            border: 2px dashed #888;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Block vs. Inline Elements</h1>
+
+    <!-- Section 1: Block Elements -->
+    <h2>1. Block Elements (Full Width)</h2>
+    <div class="block">Block Element 1 (&lt;div&gt;)</div>
+    <p class="block">Block Element 2 (&lt;p&gt;)</p>
+
+    <!-- Section 2: Inline Elements -->
+    <h2>2. Inline Elements (Content Width Only)</h2>
+    <span class="inline">Inline 1 (&lt;span&gt;)</span>
+    <span class="inline">Inline 2 (&lt;span&gt;)</span>
+    <strong class="inline">Inline 3 (&lt;strong&gt;)</strong>
+
+    <!-- Section 3: Inline inside Block -->
+    <h2>3. Inline Elements Inside a Block Element</h2>
+    <div class="container">
+        This is a <strong>&lt;div&gt;</strong> (block) containing
+        <span class="inline">Inline A</span> and
+        <span class="inline">Inline B</span> on the same line.
+    </div>
+</body>
+</html>
